@@ -1,0 +1,117 @@
+*
+{
+    margin: 0px;
+  border:0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins",sans-serif;
+
+
+}
+.main-header{
+    display:flex;
+    justify-content:space-between;
+    background-color:  rgb(161, 21, 119);
+    position:relative;
+    letter-spacing:2px;
+
+}
+ .main-header .logo
+{
+    height:5%;
+    width:5%;
+    border-radius:50px;
+
+}
+.main-header ul li{
+    display:inline;
+    margin:10px;
+    list-style-type:none;
+}  
+.main-header ul li a{
+    text-decoration: none;
+    background-color:  rgb(161, 21, 119);;
+    color: white;
+    padding-top: 0px;
+    word-spacing:10vh;
+}
+.main-header ul li a:hover{
+    background-color: rgb(9, 2, 2);
+    padding: 5px 10px;
+    border-radius: 20p solid black;
+}
+
+.cake
+{
+    width:500px;
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr ;
+    overflow-x: hidden;
+    overflow-y:scroll ;
+    transform: rotate(0deg);
+    /* background-color:#999; */
+    position: absolute;
+    right: 20%;
+    border-radius: 5px;
+}
+
+.fa{
+    font-size: 1rem;   
+}
+.checked{
+    color: orange;
+}
+.container .cake div {
+    width:100%;
+    display: grid;
+    grid-template-columns: auto ;
+    gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.cake div img{
+    width: 50%;
+    filter: grayscale(100%);
+    transition:transform 0.5s;
+}
+.cake p{
+    font-size: large;
+    font-weight: 10px;
+}
+
+.btn {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: "poboto",sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    background-color:burlywood;
+    width: 40px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.btn:hover, .btn:focus, .btn:active{
+    box-shadow: 0 0 2px rgb(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+ .cake::-webkit-scrollbar{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+ #backBtn .nextBtn {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+ .cake div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
